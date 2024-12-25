@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唐浩瑞的个人网站 - 唐唠鸭</title>
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <!-- 引入轮播图库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="images/logo.png" alt="唐唠鸭Logo" class="brand-logo">
+            <span>唐唠鸭</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">首页</a>
+            <a href="#about" class="nav-link">关于我</a>
+            <a href="#portfolio" class="nav-link">作品集</a>
+            <a href="#ai-assistant" class="nav-link ai-btn">AI助手</a>
+            <a href="#contact" class="nav-link">联系我</a>
+        </div>
+        <!-- 修改导航栏中的小红书图标 -->
+<div class="social-links">
+    <a href="#"><img src="https://img.icons8.com/color/48/weixing.png" alt="微信" class="social-icon"></a>
+    <a href="#"><img src="https://img.icons8.com/color/48/tiktok--v1.png" alt="抖音" class="social-icon"></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/FF0000/xiaohongshu.png" alt="小红书" class="social-icon"></a>
+</div>
+
+</div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>你好，我是<span class="highlight">唐浩瑞</span></h1>
+            <p class="profession">西北大学网络与新媒体系在读 | 美食自媒体博主</p>
+            <div class="description">
+                <p>热爱美食探店、旅游分享的内容创作者</p>
+                <p>专注于美食测评、旅游路线规划、大学生活分享</p>
+                <p>致力成为一名优秀的全媒体运营师</p>
+            </div>
+            <button class="cta-button">了解更多</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/1.jpg" alt="唐浩瑞的个人照片 - 日落剪影">
+        </div>
+    </section>
+
+    <!-- AI助手引导区 -->
+    <section class="ai-intro fade-in-section">
+        <div class="ai-card">
+            <img src="images/3.png" alt="AI助手小鸭子" class="ai-icon">
+            <h2>AI小鸭助手</h2>
+            <p>我是一只会聊天的小鸭子，随时为您提供智能对话服务</p>
+            <button class="ai-start-btn">开始对话</button>
+        </div>
+    </section>
+
+    <!-- AI对话模态框 -->
+    <div class="ai-modal" id="aiModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="images/3.png" alt="AI助手小鸭子" class="ai-icon-small">
+                <h2>AI小鸭助手</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="chat-container">
+                <div class="chat-messages"></div>
+                <div class="chat-input">
+                    <textarea placeholder="和小鸭子聊聊天吧..."></textarea>
+                    <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 作品集区域 -->
+    <section id="portfolio" class="portfolio fade-in-section">
+        <h2 class="section-title">精选作品</h2>
+        <div class="portfolio-grid">
+            <article class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/4.jpg" alt="唐唠鸭甄选美食">
+                    <div class="portfolio-overlay">
+                        <div class="stats">
+                            <span><i class="fas fa-play"></i> 176.4万</span>
+                            <span><i class="fas fa-heart"></i> 339</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>唐唠鸭甄选美食</h3>
+                    <p class="portfolio-description">每周必吃的波乐堡汉堡 | 大学生美食探店</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">#美食vlog</span>
+                        <span class="tag">#汉堡</span>
+                        <span class="tag">#西安外国语大学</span>
+                    </div>
+                    <div class="portfolio-meta">
+                        <span class="duration"><i class="far fa-clock"></i> 01:12</span>
+                        <span class="episode">第1集</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 添加第二个作品 -->
+            <article class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/5.jpg" alt="小唐的快乐悲伤日常">
+                    <div class="portfolio-overlay">
+                        <div class="stats">
+                            <span><i class="fas fa-play"></i> 109.4万</span>
+                            <span><i class="fas fa-heart"></i> 605</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>小唐的快乐悲伤日常</h3>
+                    <p class="portfolio-description">早上五点半出门爬山，回来发现校门没了 #精神状态belike</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">#日常vlog</span>
+                        <span class="tag">#大学生</span>
+                        <span class="tag">#精神状态belike</span>
+                    </div>
+                    <div class="portfolio-meta">
+                        <span class="duration"><i class="far fa-clock"></i> 00:05</span>
+                        <span class="episode">第1集</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 添加第三个作品 -->
+            <article class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/6.jpg" alt="小唐的乱逛合集">
+                    <div class="portfolio-overlay">
+                        <div class="stats">
+                            <span><i class="fas fa-play"></i> 140.6万</span>
+                            <span><i class="fas fa-heart"></i> 306</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>小唐的乱逛合集</h3>
+                    <p class="portfolio-description">和@照片story 夜爬华山，沉浸式Vlog长空栈道和西索道 #华山</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">#户外探险</span>
+                        <span class="tag">#华山</span>
+                        <span class="tag">#保持热爱奔赴山海</span>
+                    </div>
+                    <div class="portfolio-meta">
+                        <span class="duration"><i class="far fa-clock"></i> 03:14</span>
+                        <span class="episode">第1集</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about fade-in-section">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>教育背景</h3>
+                <p>姓名：唐浩瑞 | 学号：2022106116</p>
+                <p>西北大学 网络与新媒体专业 | 2022-2026</p>
+                <p>主修课程：全媒体运营、网络营销、新闻采访与写作、新闻摄影</p>
+                <p>西北大学新闻传播学院院融媒体短视频部部长</p>
+                <p>西北大学校电视台成员</p>
+                
+                <h3>专业技能</h3>
+                <ul>
+                    <li>全流程内容创作：独立完成销售、策划、拍摄、剪辑及后期账号维护</li>
+                    <li>短视频运营：精通抖音、视频号、小红书等平台运营</li>
+                    <li>商业合作：熟悉账号商业对接及商单销售流程</li>
+                    <li>视频制作：专业的拍摄和后期制作能力</li>
+                </ul>
+                
+                <h3>个人成就</h3>
+                <ul>
+                    <li>抖音单平台总播放量突破600万，单条最高播放量300万</li>
+                    <li>产出优质作品200+，覆盖多个主流平台</li>
+                    <li>带领团队运营院微信视频号，统筹视频策划与制作</li>
+                    <li>参与《张彦仲院士手稿捐赠》等重要活动拍摄</li>
+                    <li>助力商家抖音团购销售3000+，位列汉中市抖音人气榜铜牌</li>
+                    <li>与西安欧亚学院、西北大学化为来实验室、陕西OPPO等机构达成合作</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="contact fade-in-section">
+        <h2 class="section-title">联系我</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>邮箱：2710084783@qq.com</p>
+                </div>
+                <div class="contact-item">
+                    <img src="https://img.icons8.com/color/48/weixing.png" alt="微信" class="social-icon">
+                    <p>微信：ArHt7877</p>
+                </div>
+                <div class="contact-item">
+                    <img src="https://img.icons8.com/color/48/tiktok--v1.png" alt="抖音" class="social-icon">
+                    <p>抖音号：ArHt777</p>
+                </div><!-- 修改导航栏中的小红书图标 -->
+               
+            
+                <!-- 修改联系部分的小红书图标 -->
+                <div class="contact-item">
+                    <img src="https://img.icons8.com/ios-filled/50/FF0000/xiaohongshu.png" alt="小红书" class="social-icon">
+                    <p>小红书：ArHt7877</p>
+                </div>
+            
+            </div>
+            
+            <form class="contact-form">
+                <input type="text" placeholder="您的姓名" required>
+                <input type="email" placeholder="您的邮箱" required>
+                <textarea placeholder="请输入您的留言" required></textarea>
+                <button type="submit" class="submit-btn">发送消息</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.douyin.com/user/MS4wLjABAAAAflXZbvEzyUVgSo4I27LZgmbRYc_67fU9GL_LdOQMF08" target="_blank">
+                    <i class="fab fa-tiktok"></i> 抖音主页
+                </a>
+            </div>
+            <p class="copyright">© 2024 唐浩瑞. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 引入必要的脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
